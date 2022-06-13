@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Week 2 - Exercise 4</h1>
+
+<form action="/action_page.php">
+
+  	<label for="fname">First name:</label>
+  	<input type="text" id="fname" name="fname" required><br><br>
+  	<label for="lname">Last name:</label>
+  	<input type="text" id="lname" name="lname" required><br><br>
+  	<label for="password">Password:</label>
+  	<input type="password" id="password" name="password" required><br><br>
+  
+  <!-- Radio inputs group -->
+<h3> Gender (one choice)</h3>
+	<input type="radio" name="gender" value="male" /> Male<br/>
+	<input type="radio" name="gender" value="female" /> Female<br/>
+	<input type="radio" name="gender" value="other" /> Other
+    
+  <!-- Checkbox inputs group -->
+<h3> Gender (Array - multiple options)</h3>
+	<input type="checkbox" name="seeks[]" value="male" /> Male<br/>
+	<input type="checkbox" name="seeks[]" value="female"/> Female<br/>
+	<input type="checkbox" name="seeks[]" value="other"/> Other
+    
+  <!-- This will be rendered as a drop down list -->
+<h3>Designation using drop down box</h3>
+	<select name="Designation"> 
+    	<option value="Please select">Please Select</option>
+  		<option value="mr">Mr.</option>
+  		<option value="mrs">Mrs.</option>
+  		<option value="miss">Miss</option>
+  		<option value="ms">Ms.</option>
+  		<option value="dr">Dr.</option>
+	</select><br><br>
+    
+  <!-- This will be a combo box, only one selectable option -->
+<h3>Designation using combo box - 1 choice</h3>
+	<select name="Designation" size='6'> 
+    	<option value="Please select">Please Select</option>
+ 		<option value="mr">Mr.</option>
+  		<option value="mrs">Mrs.</option>
+  		<option value="miss">Miss</option>
+  		<option value="ms">Ms.</option>
+  		<option value="dr">Dr.</option>
+	</select>
+
+	<!-- This will be a combo box, multiple options selectable -->
+<h3>Designation using combo box - multiple choices</h3>
+	<select name="Designation" size='6' multiple > 
+    	<option value="Please select">Please Select</option>
+  		<option value="mr">Mr.</option>
+  		<option value="mrs">Mrs.</option>
+  		<option value="miss">Miss</option>
+  		<option value="ms">Ms.</option>
+  		<option value="dr">Dr.</option>
+	</select><br><br>
+    
+<h3>Text Area</h3>
+    <textarea name="Text_Field" rows="5" cols="40">Text Field</textarea><br><br>
+    
+    <input type="reset" value="Clear Form"/><br><br>
+    
+<h4>Signature</h4>
+	<input type="text" name="SignName" required placeholder="Type name here"><br><br>
+    <input type="text" name="Signature" required placeholder="Sign here"><br><br>
+    
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+
+</body>
+</html>
