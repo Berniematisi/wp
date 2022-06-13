@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Week 2 - Exercise 6</h2>
+
+<form action="https://titan.csit.rmit.edu.au/~e54061/wp/week03-processing.php" method="post">
+
+  	<label for="fname">First name:</label>
+  	<input type="text" id="fname" name="fname" required><br><br>
+  	<label for="lname">Last name:</label>
+  	<input type="text" id="lname" name="lname" required><br><br>
+  	<label for="password">Password:</label>
+  	<input type="password" id="password" name="password" required><br><br>
+ 
+<h4> Title</h4>
+    <select name="Title"> 
+    	<option value="please select">Please Select</option>
+  		<option value="mr">Mr.</option>
+  		<option value="mrs">Mrs.</option>
+  		<option value="miss">Miss</option>
+  		<option value="ms">Ms.</option>
+  		<option value="dr">Dr.</option>
+	</select>
+  
+<h4> Gender</h4>
+	<input type="radio" name="gender" value="male" /> Male<br/>
+	<input type="radio" name="gender" value="female" /> Female<br/>
+	<input type="radio" name="gender" value="other" /> Other<br/><br><br>
+    
+ 	<label for="birthday">Birthday:</label>
+  	<input type="date" id="birthday" name="birthday"><br><br>
+    
+<h4> Please choose your favourite Netball team</h4>
+	<input type="checkbox" name="favteam[]" value="vixens" /> Vixens<br/>
+	<input type="checkbox" name="favteam[]" value="magpies" /> Magpies<br/>
+	<input type="checkbox" name="favteam[]" value="swifts" /> Swifts<br>
+    <input type="checkbox" name="favteam[]" value="fever" /> Fever<br/>
+	<input type="checkbox" name="favteam[]" value="firebirds" /> Firebirds<br/>
+	<input type="checkbox" name="favteam[]" value="thunderbirds" /> Thunderbirds<br>
+    <input type="checkbox" name="favteam[]" value="giants" /> Giants<br/>
+	<input type="checkbox" name="favteam[]" value="lightening" /> Lightening<br/><br>
+    
+<h4> Team uniform dominant colour</h4>    
+ 	<label for="dominant colour">Select your teams dominant colour:</label>
+ 	<input type="color" id="dominant colour" name="dominant colour" value="#ff0000"><br>
+    
+<h4>Membership Option</h4>
+	<select name="Membership Option" size='5'> 
+    	<option value="Please select">Please Select</option>
+ 		<option value="3 home games">3 home games</option>
+  		<option value="5 home games">5 home games</option>
+  		<option value="All home games">All home games</option>
+  		<option value="Season Pass">Season Pass</option>
+  	</select>
+
+<h4>Membership Type</h4>
+	<select name="Membership Type" size='6' multiple> 
+    	<option value="Please select">Please Select</option>
+ 		<option value="Child">Child membership</option>
+  		<option value="Student">Student membership</option>
+  		<option value="Adult">Adult membership</option>
+  		<option value="Family Membership">Family Membership</option>
+        <option value="Pensioner Membership">Pensioner Membership</option>
+  	</select>
+
+<h4>No. of Memberships</h4>
+	<label for="No. of Memberships">No. of Memberships (between 0 and 10):</label>
+ 	<input type="number" id="No. of Memberships" name="No. of Memberships" min="1" max="10">    
+   
+    
+<h4>Special Requirements</h4>
+    <textarea name="Text_Field" rows="5" cols="40">eg. Wheelchair access</textarea><br><br>
+    
+    <input type="reset" value="Clear Form"/><br><br>
+    
+
+<h4>Signature</h4>
+	<input type="text" name="print name" required placeholder="Enter your name here"><br><br>
+    <input type="text" name="sign name" required placeholder="Sign here"><br><br>
+    
+    <label for="date">Date:</label>
+  	<input type="date" id="date" name="date"><br><br>
+    
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "https://titan.csit.rmit.edu.au/~e54061/wp/week03-processing.php".</p>
+
+</body>
+</html>
+
